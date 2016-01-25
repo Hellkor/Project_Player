@@ -21,4 +21,7 @@ void Entity::ChangePosition(sf::Vector2i change)
 	mPosition -= change;
 }
 
-sf::Vector2i Entity::GetPosition(){
+sf::Vector2i Entity::GetPosition()
+{ 
+	return mPosition; 
+}

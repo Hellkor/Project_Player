@@ -2,7 +2,7 @@
 #define INCLUDE_ENTITY
 
 #include <SFML/Graphics.hpp>
-#include "TextureHandler.h"
+
 
 using namespace std;
 

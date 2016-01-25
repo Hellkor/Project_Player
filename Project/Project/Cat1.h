@@ -6,7 +6,7 @@
 class Cat1 : public Player
 {
 public:
-
+	void GetControll();
 private:
 };
 
