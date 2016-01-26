@@ -11,7 +11,8 @@ public:
 	sf::Sprite getSprite();
 	void setPosition(int x, int y);
 	void setSprite(sf::Texture *texture);
-	void Render(sf::RenderWindow *window);
+	sf::Sprite getSprite();
+	void Render(sf::RenderWindow *mainWindow);
 	void Update();
 private:
 	sf::Sprite mSprite;
