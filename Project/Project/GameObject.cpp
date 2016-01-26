@@ -1,6 +1,6 @@
-#include "GameObject.h"
+/*#include "GameObject.h"
 
-GameObject::GameObject(){
+GameObject::GameObject():Entity(){
 
 }
 
@@ -10,4 +10,4 @@ void GameObject::Render(){
 
 void GameObject::Update(){
 
-}
+}*/
