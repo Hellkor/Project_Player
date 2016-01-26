@@ -20,7 +20,6 @@ protected:
 	sf::Vector2i mPosition, mTexturePosition;
 	sf::Sprite mSprite;
 	sf::IntRect mHitBox;
-	bool mMouse = false;
 };
 
 #endif
