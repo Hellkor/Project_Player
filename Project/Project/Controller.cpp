@@ -1,4 +1,5 @@
 #include "Controller.h"
+#include <iostream>
 
 Controller::Controller(){
 
@@ -8,13 +9,28 @@ Controller::~Controller(){
 
 }
 
-void Controller::assignController(int player, sf::Sprite *sprite){
+void Controller::assignController(int player, Cat1 *cat){
 	if (player == 1)
 	{
-		mPlayer1 = *sprite;
+		mCat = cat;
 	}
-	if (player == 2)
+}
+
+void Controller::move(){
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
 	{
-		mPlayer2 = *sprite;
+		mCat->move(0, -5);
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+	{
+		mCat->move(-5, 0);
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+	{
+		mCat->move(0, 5);
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+	{
+		mCat->move(5, 0);
 	}
 }

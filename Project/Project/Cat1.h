@@ -3,17 +3,17 @@
 
 #include "Player.h"
 
-class Cat1
+class Cat1 : public Player
 {
 public:
 	Cat1();
 	~Cat1();
-	sf::Sprite getSprite();
-	void setPosition(int x, int y);
-	void setSprite(sf::Texture *texture);
-	sf::Sprite getSprite();
-	void Render(sf::RenderWindow *mainWindow);
-	void Update();
+	virtual void setPosition(int x, int y);
+	virtual void setSprite(sf::Texture *texture);
+	virtual sf::Sprite* getSprite();
+	virtual void Render(sf::RenderWindow *mainWindow);
+	virtual void Update();
+	virtual void move(int x, int y);
 private:
 	sf::Sprite mSprite;
 };
