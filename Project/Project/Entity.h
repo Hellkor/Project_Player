@@ -2,13 +2,14 @@
 #define INCLUDE_ENTITY
 
 #include <SFML/Graphics.hpp>
-
+#include <iostream>
 
 using namespace std;
 
 class Entity
 {
 public:
+	typedef std::vector<Entity*> EntityVector;
 	Entity(sf::Vector2i position, sf::IntRect rect);
 	~Entity();
 	virtual void Update() = 0;

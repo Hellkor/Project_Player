@@ -1,6 +1,7 @@
 #ifndef INCLUDE_GAMEOBJECT
 #define INCLUDE_GAMEOBJECT
 
+#include <iostream>
 #include <vector>
 #include "Entity.h"
 #include "TextureHandler.h"
@@ -8,16 +9,14 @@
 class GameObject : public Entity
 {
 public:
+	typedef std::vector<Player*> PlayerVector;
 	GameObject();
 	~GameObject();
 	void CreatePlayer(int ID);
 	void Render(sf::RenderWindow *mainWindow);
 	void Update();
 private:
-	sf::Vector2i mPosition;
-	int mID;
-	int mTextureID;
-	TextureHandler *mTextureHandler;
+	PlayerVector mPlayerVector;
 };
 
 #endif

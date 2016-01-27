@@ -2,19 +2,14 @@
 #include "Controller.h"
 #include <iostream>
 
-Cat1::Cat1() : Player(){
+Cat1::Cat1(sf::Texture *texture, int x, int y) : Player()
+{
+	mSprite.setTexture(*texture, true);
+	mSprite.setPosition(x, y);
 }
 
 Cat1::~Cat1(){
 
-}
-
-void Cat1::setPosition(int x, int y){
-	mSprite.setPosition(x, y);
-}
-
-void Cat1::setSprite(sf::Texture *texture){
-	mSprite.setTexture(*texture, true);
 }
 
 void Cat1::Render(sf::RenderWindow *mainWindow){

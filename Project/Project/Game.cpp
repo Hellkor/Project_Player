@@ -1,10 +1,4 @@
 #include "Game.h"
-#include "TextureHandler.h"
-#include "Cat1.h"
-#include "Controller.h"
-#include "Player.h"
-#include "Entity.h"
-#include "GameObject.h"
 
 static sf::RenderWindow *window;
 static TextureHandler textures;
@@ -13,7 +7,8 @@ sf::Texture *texture=textures.GetTexture(0);
 //Cat1 cat1;
 //Controller controller1;
 
-Game::Game()
+Game::Game() :
+mEntities()
 {
 	window = new sf::RenderWindow(sf::VideoMode(1000, 800), "CatBurglars");
 	window->setVerticalSyncEnabled(true);
@@ -25,6 +20,7 @@ Game::Game()
 	TextureHandler *textures;
 	vector.x = 100;
 	vector.y = 100;
+	mGameObjectives->CreatePlayer(1);
 	//GameObject gameObject(vector, 1, 10, textures);
 }
 
@@ -34,6 +30,7 @@ Game::~Game()
 }
 
 void Game::Run(){
+	mEntities.push_back(mGameObjectives);
 	while (window->isOpen())
 	{
 
@@ -44,7 +41,7 @@ void Game::Run(){
 				window->close();
 		}
 		//controller1.move();
-
+		
 	/*	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
 		{
 			cat1.getSprite()->move(0, -5);
