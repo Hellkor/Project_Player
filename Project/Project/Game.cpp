@@ -33,25 +33,6 @@ void Game::Run(){
 			if (event.type == sf::Event::Closed)
 				window->close();
 		}
-		//controller1.move();
-		
-	/*	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-		{
-			cat1.getSprite()->move(0, -5);
-		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-		{
-			cat1.getSprite()->move(-5, 0);
-		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-		{
-			cat1.getSprite()->move(0, 5);
-		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-		{
-			cat1.getSprite()->move(5, 0);
-		}*/
-
 
 		Render();
 	}
