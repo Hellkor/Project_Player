@@ -1,10 +1,11 @@
 #ifndef INCLUDE_CAT1
 #define INCLUDE_CAT1
 
-#include "Player.h"
 #include <SFML\Graphics.hpp>
+#include "GameObject.h"
 
-class Cat1 : public Player
+
+class Cat1 : public GameObject
 {
 public:
 	Cat1(sf::Texture *texture, int x, int y);

@@ -6,6 +6,7 @@
 #include <vector>
 
 #include "GameObject.h"
+#include "Cat1.h"
 
 class Game
 {
@@ -19,6 +20,7 @@ private:
 	void Render();
 	EntityVector mEntities;
 	GameObject *mGameObjectives;
+	Cat1 *mCat;
 };
 
 #endif

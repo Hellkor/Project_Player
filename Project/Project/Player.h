@@ -6,7 +6,6 @@
 class Player: public GameObject
 {
 public:
-	typedef std::vector<Player*> PlayerVector;
 	Player();
 	~Player();
 	virtual void Render(sf::RenderWindow *mainWindow) = 0;
