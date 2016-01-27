@@ -1,5 +1,4 @@
 #include "Cat1.h"
-#include "Controller.h"
 #include <iostream>
 
 Cat1::Cat1(sf::Texture *texture, int x, int y) : GameObject()
@@ -14,7 +13,7 @@ Cat1::~Cat1(){
 
 void Cat1::Render(sf::RenderWindow *mainWindow){
 	mainWindow->draw(mSprite);
-	std::cout << "Hello there" << std::endl;
+	//std::cout << "Hello there" << std::endl;
 }
 
 void Cat1::Update(){
