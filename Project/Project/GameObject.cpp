@@ -20,7 +20,7 @@ GameObject::~GameObject(){
 
 void GameObject::CreatePlayer(int ID){
 	if (ID == 1)
-		mPlayerVector.push_back();
+		//mPlayerVector.push_back();
 		//Cat1 cat1(textures.GetTexture(10), 100, 100);
 	if (ID == 2)
 		;
