@@ -9,7 +9,7 @@ class Controller
 public:
 	Controller();
 	~Controller();
-	void assignController(int a, Cat1 *cat);
+	void assignController(int player, Cat1 *cat);
 	void move();
 private:
 	sf::Sprite mPlayer1;
