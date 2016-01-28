@@ -1,5 +1,5 @@
-#ifndef INCLUDE_ENTITY
-#define INCLUDE_ENTITY
+#ifndef INCLUDED_ENTITY
+#define INCLUDED_ENTITY
 
 #include <SFML/Graphics.hpp>
 #include <iostream>

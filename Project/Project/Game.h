@@ -1,4 +1,4 @@
-#ifndef INCLUDE_GAME
+#ifndef INCLUDED_GAME
 #define INCLUDE_GAME
 
 #include <SFML/Graphics.hpp>
@@ -7,6 +7,7 @@
 
 #include "GameObject.h"
 #include "Cat1.h"
+#include "Controller.h"
 
 class Game
 {
@@ -21,6 +22,7 @@ private:
 	EntityVector mEntities;
 	GameObject *mGameObjectives;
 	Cat1 *mCat;
+	Controller mController;
 };
 
 #endif

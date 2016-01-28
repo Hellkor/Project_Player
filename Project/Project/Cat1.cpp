@@ -7,14 +7,12 @@ mID(ID)
 	mSprite.setTexture(*texture, true);
 	mSprite.setPosition(x, y);
 }
-
 Cat1::~Cat1(){
 
 }
 
 void Cat1::Render(sf::RenderWindow *mainWindow){
 	mainWindow->draw(mSprite);
-	//std::cout << "Hello there" << std::endl;
 }
 
 void Cat1::Update(){

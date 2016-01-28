@@ -1,9 +1,9 @@
-#ifndef INCLUDE_CAT1
-#define INCLUDE_CAT1
+#ifndef INCLUDED_CAT1
+#define INCLUDED_CAT1
 
 #include <SFML\Graphics.hpp>
 #include "GameObject.h"
-
+#include "Controller.h"
 
 class Cat1 : public GameObject
 {

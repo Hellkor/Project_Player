@@ -1,8 +1,10 @@
 #include "Controller.h"
 #include <iostream>
 
-Controller::Controller(){
-
+Controller::Controller(Cat1 *cat):
+mCat(cat)
+{
+	
 }
 
 Controller::~Controller(){
