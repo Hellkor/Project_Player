@@ -13,11 +13,12 @@ mCat()
 	textures.Initialize();
 	//controller1.assignController(1, &cat1);
 	sf::Vector2i vector;
-	mGameObjectives->CreatePlayer(1);
-	mCat = new Cat1(textures.GetTexture(10), 50, 50);
+	mGameObjectives->CreatePlayer(textures.GetTexture(10), 1);
+	mCat = new Cat1(textures.GetTexture(10), 50, 50,1);
 	mEntities.push_back(mCat);
-	mCat = new Cat1(textures.GetTexture(10), 150, 150);
+	mCat = new Cat1(textures.GetTexture(10), 150, 150,2);
 	mEntities.push_back(mCat);
+	mEntities.push_back(mGameObjectives);
 }
 
 Game::~Game()
@@ -48,7 +49,9 @@ void Game::Render()
 {
 	window->clear(sf::Color(0, 200, 0, 255));
 	//mCat->Render(window);
+	
 	mEntities[0]->Render(window);
 	mEntities[1]->Render(window);
+	mEntities[2]->Render(window);
 	window->display();
 }

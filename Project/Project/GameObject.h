@@ -9,14 +9,14 @@
 class GameObject : public Entity
 {
 public:
-//	typedef std::vector<Player*> PlayerVector;
+	typedef std::vector<GameObject*> GameObjectVector;
 	GameObject();
 	~GameObject();
-	void CreatePlayer(int ID);
+	void CreatePlayer(sf::Texture *texture, int ID);
 	void Render(sf::RenderWindow *mainWindow);
 	void Update();
 private:
-//	PlayerVector mPlayerVector;
+	GameObjectVector mPlayerVector;
 };
 
 #endif

@@ -1,7 +1,8 @@
 #include "Cat1.h"
 #include <iostream>
 
-Cat1::Cat1(sf::Texture *texture, int x, int y) : GameObject()
+Cat1::Cat1(sf::Texture *texture, int x, int y, int ID) : GameObject(),
+mID(ID)
 {
 	mSprite.setTexture(*texture, true);
 	mSprite.setPosition(x, y);
