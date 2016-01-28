@@ -6,6 +6,8 @@ mID(ID)
 {
 	mSprite.setTexture(*texture, true);
 	mSprite.setPosition(x, y);
+	mPosition.x = x;
+	mPosition.y = y;
 }
 Cat1::~Cat1(){
 
@@ -13,6 +15,7 @@ Cat1::~Cat1(){
 
 void Cat1::Render(sf::RenderWindow *mainWindow){
 	mainWindow->draw(mSprite);
+	std::cout << "asd"<<std::endl;
 }
 
 void Cat1::Update(){
@@ -20,5 +23,12 @@ void Cat1::Update(){
 }
 
 void Cat1::move(int x, int y){
-	mSprite.move(x, y);
+	//mSprite.move(x, y);
+	mPosition.x += x;
+	mPosition.y += y;
+	mSprite.setPosition(sf::Vector2f(mPosition));
+}
+
+sf::Vector2i Cat1::GetPosition(){
+	return mPosition;
 }

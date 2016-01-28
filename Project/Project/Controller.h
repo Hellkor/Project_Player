@@ -6,10 +6,10 @@
 class Controller
 {
 public:
-	Controller(Cat1 *cat);
+	Controller();
 	~Controller();
 	void assignController(int player, Cat1 *cat);
-	void move();
+	void move(Cat1 *cat);
 private:
 	Cat1 *mCat;
 };
