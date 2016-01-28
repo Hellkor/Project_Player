@@ -77,23 +77,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Cat1.cpp" />
+    <ClCompile Include="Cat.cpp" />
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="NewMain.cpp" />
-    <ClCompile Include="Player.cpp" />
     <ClCompile Include="TextureHandler.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Cat1.h" />
+    <ClInclude Include="Cat.h" />
     <ClInclude Include="Controller.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObject.h" />
-    <ClInclude Include="Player.h" />
     <ClInclude Include="TextureHandler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,17 +1,17 @@
 #ifndef INCLUDED_CONTROLLER
 #define INCLUDED_CONTROLLER
 
-#include "Cat1.h"
+#include "Cat.h"
 
 class Controller
 {
 public:
 	Controller();
 	~Controller();
-	void assignController(int player, Cat1 *cat);
-	void move(Cat1 *cat);
+	void assignController(int player, Cat *cat);
+	void move(Cat *cat);
 private:
-	Cat1 *mCat;
+	Cat *mCat;
 };
 
 #endif

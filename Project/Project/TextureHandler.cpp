@@ -10,6 +10,7 @@ TextureHandler::~TextureHandler()
 
 }
 
+//Load textures of the game
 void TextureHandler::Initialize()
 {
 	mTileTexture.loadFromFile("Resources/TestTile.png");
@@ -19,6 +20,7 @@ void TextureHandler::Initialize()
 	mCat1Texture.loadFromFile("Resources/Cat.png");
 }
 
+//Retrun a texture
 sf::Texture* TextureHandler::GetTexture(int ID)
 {
 	if (ID == 0)

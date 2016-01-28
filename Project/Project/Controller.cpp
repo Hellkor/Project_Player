@@ -10,14 +10,16 @@ Controller::~Controller(){
 
 }
 
-void Controller::assignController(int player, Cat1 *cat){
+//Not used, delete if not needed
+void Controller::assignController(int player, Cat *cat){
 	if (player == 1)
 	{
 		mCat = cat;
 	}
 }
 
-void Controller::move(Cat1 *cat){
+//Change position of cat with keyboard
+void Controller::move(Cat *cat){
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
 	{
 		cat->move(0, -5);

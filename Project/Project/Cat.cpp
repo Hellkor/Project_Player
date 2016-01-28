@@ -1,34 +1,35 @@
-#include "Cat1.h"
+#include "Cat.h"
 #include <iostream>
 
-Cat1::Cat1(sf::Texture *texture, int x, int y, int ID) : GameObject(),
+Cat::Cat(sf::Texture *texture, int x, int y, int ID) : GameObject(),
 mID(ID)
 {
 	mSprite.setTexture(*texture, true);
+	//Starting position
 	mSprite.setPosition(x, y);
 	mPosition.x = x;
 	mPosition.y = y;
 }
-Cat1::~Cat1(){
+Cat::~Cat(){
 
 }
-
-void Cat1::Render(sf::RenderWindow *mainWindow){
+//Render sprite on screen
+void Cat::Render(sf::RenderWindow *mainWindow){
 	mainWindow->draw(mSprite);
 	std::cout << "asd"<<std::endl;
 }
 
-void Cat1::Update(){
+void Cat::Update(){
 	
 }
-
-void Cat1::move(int x, int y){
+//Move the sprite
+void Cat::move(int x, int y){
 	//mSprite.move(x, y);
 	mPosition.x += x;
 	mPosition.y += y;
 	mSprite.setPosition(sf::Vector2f(mPosition));
 }
-
-sf::Vector2i Cat1::GetPosition(){
+//Returns position of sprite
+sf::Vector2i Cat::GetPosition(){
 	return mPosition;
 }

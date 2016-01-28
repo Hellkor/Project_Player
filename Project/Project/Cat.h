@@ -1,14 +1,14 @@
-#ifndef INCLUDED_CAT1
-#define INCLUDED_CAT1
+#ifndef INCLUDED_CAT
+#define INCLUDED_CAT
 
 #include <SFML\Graphics.hpp>
 #include "GameObject.h"
 
-class Cat1 : public GameObject
+class Cat : public GameObject
 {
 public:
-	Cat1(sf::Texture *texture, int x, int y, int ID);
-	~Cat1();
+	Cat(sf::Texture *texture, int x, int y, int ID);
+	~Cat();
 	virtual void Render(sf::RenderWindow *mainWindow);
 	virtual void Update();
 	virtual void move(int x, int y);

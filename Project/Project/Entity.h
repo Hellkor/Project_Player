@@ -9,15 +9,12 @@ using namespace std;
 class Entity
 {
 public:
-	Entity(sf::Vector2i position, sf::IntRect rect);
+	Entity();
 	~Entity();
 	virtual void Update() = 0;
 	virtual void Render(sf::RenderWindow *mainWindow) = 0;
 	virtual sf::Vector2i GetPosition()=0;
 protected:
-	sf::Vector2i mPosition, mTexturePosition;
-	sf::Sprite mSprite;
-	sf::IntRect mHitBox;
 };
 
 #endif
